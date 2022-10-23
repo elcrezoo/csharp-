@@ -1,0 +1,33 @@
+ private void button1_Click_1(object sender, EventArgs e)
+        {
+            double s1, s2, proje, ort;
+            string durum;
+            s1 = Convert.ToDouble(textBox1.Text);
+            s2 = Convert.ToDouble(textBox2.Text);
+            proje = Convert.ToDouble(textBox3.Text);
+
+            ort = (s1 + s2 + proje) / 3;
+
+            if (ort >= 50) 
+            {
+                durum = " GEÇTİ ";
+            }     
+        else 
+            {
+                durum = " KALDI "; 
+
+            }
+            textBox4.Text = ort.ToString("0.00 ") + " / " + durum; 
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = " ";
+            textBox2.Text = " ";
+            textBox3.Text = " ";
+            textBox4.Text = " ";
+            textBox1.Focus();
+            
+        }
+    }
