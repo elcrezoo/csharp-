@@ -1,0 +1,30 @@
+private void button1_Click(object sender, EventArgs e)
+        {
+            int kitapadet;
+            double toplam;
+            kitapadet = Convert.ToInt16(textBox1.Text);
+            if (kitapadet >= 0 && kitapadet <= 20) 
+            {
+                toplam = (kitapadet * 17) - (kitapadet * 17 * 0.20);
+                label3.Text = toplam + " TL "; 
+
+            }
+            if (kitapadet >= 21 && kitapadet <= 40) 
+            {
+                toplam = (kitapadet * 17) - (kitapadet * 17 * 0.4);
+                label3.Text = toplam + " TL "; 
+            }
+            if (kitapadet >= 41) 
+            {
+                toplam= (kitapadet * 17) - (kitapadet * 17 * 0.5);
+                label3.Text = toplam + " TL "; 
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label3.Text = " 00 TL  ";
+            textBox1.Text = " ";
+            textBox1.Focus(); 
+
+        }
