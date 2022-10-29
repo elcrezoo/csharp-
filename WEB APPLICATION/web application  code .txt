@@ -1,0 +1,91 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace web_application
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void eNESBOZKURTKİMDİToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("http://enesbozkurt.com.tr/enes-bozkurt-kimdir/");
+        }
+
+        private void fORMHAKKINDAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("BU PROJE ENES BOZKURT TARAFINDAN YAPILMIŞTIR", "FROM BİLGİ ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void eXİTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
+        }
+
+        private void aNASAYFAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Yellow;
+            webBrowser1.Navigate(""); 
+        }
+
+        private void aRŞİVLERToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.RoyalBlue;
+            webBrowser1.Navigate("http://codearchive.xyz/codearchive/?cat=1");
+        }
+
+        private void mETOTLARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.AliceBlue;
+            webBrowser1.Navigate("http://codearchive.xyz/codearchive/?cat=3");
+        }
+
+        private void uDEMYKURSLARIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Purple;
+            webBrowser1.Navigate("http://codearchive.xyz/codearchive/?cat=4");
+        }
+
+        private void cODEARCHİVEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Yellow;
+            webBrowser1.Navigate("http://codearchive.xyz/codearchive/?cat=2");
+        }
+
+        private void sİTELOGİNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void eVRENESTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://evrenest.com/");
+        }
+
+        private void eNESBOZKURTToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://enesbozkurt.com.tr");
+
+        }
+
+        private void cODEARCHİVEToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("http://codearchive.xyz/codearchive/");
+        }
+
+        private void eVRENESTToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("https://evrenest.com/hakkimizda/");
+        }
+    }
+}
